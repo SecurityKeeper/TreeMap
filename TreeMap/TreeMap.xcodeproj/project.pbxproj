@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F782EE21D45AF4C0075E438 /* NSTreeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F782EE01D45AF4C0075E438 /* NSTreeNode.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0F782EE21D45AF4C0075E438 /* NSTreeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F782EE01D45AF4C0075E438 /* NSTreeNode.h */; };
 		0F782EE31D45AF4C0075E438 /* NSTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F782EE11D45AF4C0075E438 /* NSTreeNode.m */; };
 		0FA978751D40C8D0000BAA3B /* TreeMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FA978741D40C8D0000BAA3B /* TreeMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0FA9787C1D40C8D0000BAA3B /* TreeMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA978711D40C8D0000BAA3B /* TreeMap.framework */; };
 		0FA978811D40C8D0000BAA3B /* TreeMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA978801D40C8D0000BAA3B /* TreeMapTests.m */; };
 		0FA9788D1D40C901000BAA3B /* NSTreeMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FA9788B1D40C901000BAA3B /* NSTreeMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0FA9788E1D40C901000BAA3B /* NSTreeMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA9788C1D40C901000BAA3B /* NSTreeMap.m */; };
-		0FA978911D40CA16000BAA3B /* NSTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FA9788F1D40CA16000BAA3B /* NSTree.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0FA978911D40CA16000BAA3B /* NSTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FA9788F1D40CA16000BAA3B /* NSTree.h */; };
 		0FA978921D40CA16000BAA3B /* NSTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA978901D40CA16000BAA3B /* NSTree.m */; };
+		0FAC678C1D48972D006CB57B /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FAC678B1D48972D006CB57B /* libstdc++.tbd */; };
+		0FAC678F1D4898FC006CB57B /* SBTree.c in Sources */ = {isa = PBXBuildFile; fileRef = 0FAC678D1D4898FC006CB57B /* SBTree.c */; };
+		0FAC67901D4898FC006CB57B /* SBTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FAC678E1D4898FC006CB57B /* SBTree.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +38,15 @@
 		0FA978741D40C8D0000BAA3B /* TreeMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TreeMap.h; sourceTree = "<group>"; };
 		0FA978761D40C8D0000BAA3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FA9787B1D40C8D0000BAA3B /* TreeMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreeMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0FA978801D40C8D0000BAA3B /* TreeMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreeMapTests.m; sourceTree = "<group>"; };
+		0FA978801D40C8D0000BAA3B /* TreeMapTests.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp.preprocessed; path = TreeMapTests.m; sourceTree = "<group>"; };
 		0FA978821D40C8D0000BAA3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FA9788B1D40C901000BAA3B /* NSTreeMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTreeMap.h; sourceTree = "<group>"; };
-		0FA9788C1D40C901000BAA3B /* NSTreeMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTreeMap.m; sourceTree = "<group>"; };
+		0FA9788C1D40C901000BAA3B /* NSTreeMap.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp.preprocessed; fileEncoding = 4; path = NSTreeMap.m; sourceTree = "<group>"; };
 		0FA9788F1D40CA16000BAA3B /* NSTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTree.h; sourceTree = "<group>"; };
 		0FA978901D40CA16000BAA3B /* NSTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTree.m; sourceTree = "<group>"; };
+		0FAC678B1D48972D006CB57B /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		0FAC678D1D4898FC006CB57B /* SBTree.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp.preprocessed; fileEncoding = 4; path = SBTree.c; sourceTree = "<group>"; };
+		0FAC678E1D4898FC006CB57B /* SBTree.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp.preprocessed; fileEncoding = 4; path = SBTree.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FAC678C1D48972D006CB57B /* libstdc++.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,7 @@
 		0FA978671D40C8D0000BAA3B = {
 			isa = PBXGroup;
 			children = (
+				0FAC678B1D48972D006CB57B /* libstdc++.tbd */,
 				0FA978731D40C8D0000BAA3B /* TreeMap */,
 				0FA9787F1D40C8D0000BAA3B /* TreeMapTests */,
 				0FA978721D40C8D0000BAA3B /* Products */,
@@ -90,6 +98,8 @@
 				0FA978901D40CA16000BAA3B /* NSTree.m */,
 				0F782EE01D45AF4C0075E438 /* NSTreeNode.h */,
 				0F782EE11D45AF4C0075E438 /* NSTreeNode.m */,
+				0FAC678E1D4898FC006CB57B /* SBTree.h */,
+				0FAC678D1D4898FC006CB57B /* SBTree.c */,
 				0FA978761D40C8D0000BAA3B /* Info.plist */,
 			);
 			path = TreeMap;
@@ -111,10 +121,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FAC67901D4898FC006CB57B /* SBTree.h in Headers */,
 				0FA9788D1D40C901000BAA3B /* NSTreeMap.h in Headers */,
 				0FA978751D40C8D0000BAA3B /* TreeMap.h in Headers */,
-				0FA978911D40CA16000BAA3B /* NSTree.h in Headers */,
 				0F782EE21D45AF4C0075E438 /* NSTreeNode.h in Headers */,
+				0FA978911D40CA16000BAA3B /* NSTree.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +227,7 @@
 			files = (
 				0FA978921D40CA16000BAA3B /* NSTree.m in Sources */,
 				0F782EE31D45AF4C0075E438 /* NSTreeNode.m in Sources */,
+				0FAC678F1D4898FC006CB57B /* SBTree.c in Sources */,
 				0FA9788E1D40C901000BAA3B /* NSTreeMap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

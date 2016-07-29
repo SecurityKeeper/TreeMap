@@ -12,5 +12,8 @@
 
 - (void)setValue:(ObjectType)value forKey:(KeyType <NSCopying>)key;
 - (ObjectType)valueForKey:(KeyType)key;
+- (id)valueOfRank:(unsigned long)rank;
+- (unsigned long)rankOfKey:(KeyType)key;
+- (void)removeValueForKey:(KeyType)key;
 
 @end
