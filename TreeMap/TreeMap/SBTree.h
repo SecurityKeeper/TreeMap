@@ -13,6 +13,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string>
+#include <regex>
 #import <Foundation/Foundation.h>
 
 #endif /* SBTree_h */
@@ -32,6 +33,10 @@ typedef struct SBTNode {
         value = _value;
     }
 }SBTNode, *SBTree;
+
+bool operator>(string &string1,string &string2);
+
+bool operator<(string &string1,string &string2);
 
 SBTNode *SBT_Search(SBTree node, string key);
 

@@ -10,6 +10,42 @@
 
 #pragma mark - Tree Maintain
 
+bool has_suffix(const std::string &str, const std::string &suffix)
+{
+    return str.size() >= suffix.size() &&
+    str.compare(str.size() - suffix.size(), suffix.size(), suffix) == 0;
+}
+
+bool operator>(string &string1,string &string2)
+{
+    return string2 < string1;
+}
+
+bool operator<(string &string1,string &string2)
+{
+//    bool noStr1 = has_suffix(string1, "{__NOSTRING}"), noStr2 = has_suffix(string2, "{__NOSTRING}");
+//    if (noStr1 && !noStr2) {
+//        return true;
+//    }
+//    else if (!noStr1 && noStr2)
+//    {
+//        return false;
+//    }
+    
+    if (string1.length() > string2.length())
+    {
+        return false;
+    }
+    else if (string1.length() < string2.length())
+    {
+        return true;
+    }
+    else
+    {
+        return string1.compare(string2) < 0;
+    }
+}
+
 void left_rotate(SBTree &node)
 {
     SBTNode *temp = node->rchild;
@@ -30,7 +66,7 @@ void right_rotate(SBTree &node)
     node = temp;
 }
 
-void SBT_Maintain(SBTree &node,bool flag)
+void SBT_Maintain(SBTree &node, bool flag)
 {
     if(!node)
     {

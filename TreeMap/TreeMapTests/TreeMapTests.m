@@ -36,7 +36,7 @@
     SBTree tree = nil;
     map<string, int> mp;
     int i = 0;
-    while (i < 20) {
+    while (i < 1e6) {
         [tmap setValue:@1 forKey:[NSNumber numberWithInt:i]];
 //        SBT_Insert(tree, new SBTNode(std::to_string(i),"d",valueTypeString));
 //        [dic setObject:@"1" forKey:[NSString stringWithFormat:@"%d",i]];
@@ -44,7 +44,7 @@
         i++;
     }
     
-    NSLog(@"%lu",[tmap rankOfKey:@15]);
+    NSLog(@"%lu",[tmap rankOfKey:@9]);
     
     [tmap removeValueForKey:@10];
     [tmap removeValueForKey:@13];
