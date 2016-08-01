@@ -15,5 +15,6 @@
 - (id)valueOfRank:(unsigned long)rank;
 - (unsigned long)rankOfKey:(KeyType)key;
 - (void)removeValueForKey:(KeyType)key;
+- (void)removeAll;
 
 @end

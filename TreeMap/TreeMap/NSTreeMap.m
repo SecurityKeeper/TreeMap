@@ -138,4 +138,11 @@
     }
 }
 
+- (void)removeAll
+{
+    if (tree != nil) {
+        [self deleteTree:tree];
+    }
+}
+
 @end
