@@ -40,6 +40,8 @@
     if (node != NULL) {
         [self deleteTree:node->lchild];
         [self deleteTree:node->rchild];
+        node->lchild = NULL;
+        node->rchild = NULL;
         delete node;
     }
 }
